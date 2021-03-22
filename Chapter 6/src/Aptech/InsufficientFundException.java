@@ -1,5 +1,10 @@
 package Aptech;
 
-public class InsufficientFundException extends Account {
-
+public class InsufficientFundException extends Exception {
+    public InsufficientFundException(){
+        super();
+    }
+    public InsufficientFundException(String msg){
+        super(msg);
+    }
 }

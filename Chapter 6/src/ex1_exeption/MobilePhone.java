@@ -45,6 +45,7 @@ public class MobilePhone {
     public void sendMessage() {
         Scanner input = new Scanner(System.in);
         try {
+
             getPhoneNumbers();
             System.out.println("Enter the index of phone number to which you want to send the message:");
             int index  = input.nextInt();
@@ -54,6 +55,7 @@ public class MobilePhone {
             this.message = input.nextLine();
             System.out.printf("\nSending message [%s] to [%d] ..... please wait\n", this.message, this.phoneNumbers[index]);
                     System.out.printf("\nMessage successfully sent.");
+
         } catch(ArrayIndexOutOfBoundsException e) {
             System.out.println("Exception occurred - Invalid index.");
         } catch(InputMismatchException e) {
@@ -63,5 +65,7 @@ public class MobilePhone {
         } catch(Exception e) {
             System.out.println("Exception occurred - " + e.getMessage());
         }
+
+
     }
 }

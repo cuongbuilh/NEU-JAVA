@@ -1,6 +1,7 @@
 package ex3_createException;
 
 public class MyException extends Exception{
+
     public MyException(String message){
         super(message);
     }

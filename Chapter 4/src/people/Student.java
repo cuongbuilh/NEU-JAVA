@@ -35,12 +35,14 @@ public class Student {
         System.out.println("Enter details about the student:");
         System.out.println("Enter student code:" );
         code = input.nextInt();
+        input.nextLine();
         System.out.println("Enter name:");
-        name = input.next();
+        name = input.nextLine();
         System.out.println("Enter age:" );
         age = input.nextInt();
+        input.nextLine();
         System.out.println("Enter address:");
-        address = input.next();
+        address = input.nextLine();
 
         System.out.println("Enter Project: You can type as many lines as " +
                 "you wish. Enter 0 to stop.");
