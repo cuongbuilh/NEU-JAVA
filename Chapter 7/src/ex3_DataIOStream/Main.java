@@ -4,12 +4,15 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+
+        //write data
         FileOutputStream fos = new FileOutputStream("./files/WriteInt.txt");
         DataOutputStream dos = new DataOutputStream(fos);
         int i = 100;
         dos.writeInt(i);
         dos.close();
 
+        // read data
         FileInputStream fin = new FileInputStream("./files/WriteInt.txt");
         DataInputStream din = new DataInputStream(fin);
         int d = din.readInt();
